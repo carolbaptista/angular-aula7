@@ -1,0 +1,14 @@
+<h2>Compras</h2>
+
+<ul class="Compra">
+  <li *ngFor="let Compra of compras">
+  <!--let (classe of pagina) -->
+ <span>{{Compra.descricao}}</span>
+</li>
+</ul>
+
+
+<div>
+    <input [(ngModel)]= "compra.descricao" style="padding:10px" placeholder="Digite o nome da comida">
+    <button (click)="addCompras()">Adicionar</button>
+  </div>
